@@ -1,49 +1,45 @@
-/* Grundlegende Stile */
+/* Allgemeine Stile */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Slab', serif;  /* Verwendung der Slab Serif-Schriftart */
+    background-color: #000;            /* Schwarzer Hintergrund */
+    color: #fff;                       /* Weiße Schriftfarbe */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    height: 100vh;                     /* Die Seite soll die gesamte Höhe des Viewports einnehmen */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;           /* Inhalt horizontal zentrieren */
+    align-items: center;               /* Inhalt vertikal zentrieren */
+    flex-direction: column;            /* Inhalt untereinander anordnen */
+    text-align: center;                /* Text zentrieren */
 }
 
-/* Das Menü oben rechts */
-.menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
+/* Menü Button (Hamburger Menü) */
 .menu-btn {
-    background-color: transparent;  /* Transparenter Hintergrund */
-    border: none;                   /* Keine Umrandung */
-    cursor: pointer;                /* Zeigt Handcursor an */
-    display: flex;                  /* Damit die Striche nebeneinander angeordnet werden */
-    flex-direction: column;         /* Striche übereinander anordnen */
-    gap: 5px;                       /* Abstand zwischen den Strichen */
+    background-color: transparent;  /* Transparent, da der Button keine Hintergrundfarbe braucht */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding: 10px;
 }
 
+/* Die Striche im Menü */
 .bar {
-    display: block;                 /* Block-Level für die Striche */
-    width: 30px;                    /* Breite der Striche */
-    height: 4px;                    /* Höhe der Striche */
-    background-color: #333;         /* Farbe der Striche */
-    border-radius: 2px;             /* Runde Ecken für die Striche */
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff; /* Weiße Striche */
+    border-radius: 2px;
 }
 
-/* Das ausklappbare Menü */
+/* Das Menü, wenn es angezeigt wird */
 .menu-content {
     display: none;
     position: absolute;
     top: 40px;
     right: 0;
-    background-color: white;
+    background-color: #333; /* Dunkelgrau für das Menü */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     width: 150px;
@@ -57,7 +53,7 @@ body {
 
 .menu-content li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
 }
 
 .menu-content li:last-child {
@@ -65,12 +61,24 @@ body {
 }
 
 .menu-content a {
-    color: #007bff;
+    color: #fff; /* Weiße Schrift für die Links */
     text-decoration: none;
 }
 
 .menu-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Unterstreichen, wenn man mit der Maus drüber fährt */
+}
+
+/* Willkommenstext */
+.welcome h1 {
+    font-size: 32px;
+    color: #fff;               /* Weiße Schrift */
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #fff;               /* Weiße Schrift */
 }
 
 /* Menü anzeigen, wenn der Button geklickt wird */
