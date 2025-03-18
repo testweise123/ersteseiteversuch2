@@ -20,17 +20,21 @@ body {
 }
 
 .menu-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: transparent;  /* Transparenter Hintergrund */
+    border: none;                   /* Keine Umrandung */
+    cursor: pointer;                /* Zeigt Handcursor an */
+    display: flex;                  /* Damit die Striche nebeneinander angeordnet werden */
+    flex-direction: column;         /* Striche übereinander anordnen */
+    gap: 5px;                       /* Abstand zwischen den Strichen */
+    padding: 10px;
 }
 
-.menu-btn:hover {
-    background-color: #0056b3;
+.bar {
+    display: block;                 /* Block-Level für die Striche */
+    width: 30px;                    /* Breite der Striche */
+    height: 4px;                    /* Höhe der Striche */
+    background-color: #333;         /* Farbe der Striche */
+    border-radius: 2px;             /* Runde Ecken für die Striche */
 }
 
 /* Das ausklappbare Menü */
@@ -67,18 +71,6 @@ body {
 
 .menu-content a:hover {
     text-decoration: underline;
-}
-
-/* Willkommenstext */
-.welcome h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.welcome p {
-    font-size: 18px;
-    color: #666;
 }
 
 /* Menü anzeigen, wenn der Button geklickt wird */
