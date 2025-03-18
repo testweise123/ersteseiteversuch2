@@ -22,6 +22,9 @@ body {
     flex-direction: column;
     gap: 5px;
     padding: 10px;
+    position: absolute;             /* Position absolut setzen */
+    top: 10px;                      /* Abstand von oben */
+    right: 10px;                    /* Abstand von rechts */
 }
 
 /* Die Striche im Menü */
