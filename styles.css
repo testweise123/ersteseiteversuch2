@@ -72,6 +72,11 @@ body {
     text-decoration: underline;  /* Unterstreichen, wenn man mit der Maus drüber fährt */
 }
 
+/* Menü anzeigen, wenn der Button geklickt wird */
+.menu-content.active {
+    display: block;
+}
+
 /* Willkommenstext */
 .welcome h1 {
     font-size: 32px;
@@ -82,10 +87,4 @@ body {
 .welcome p {
     font-size: 18px;
     color: #fff;               /* Weiße Schrift */
-}
-
-/* Menü anzeigen, wenn der Button geklickt wird */
-.menu-btn:focus + .menu-content,
-.menu-content:hover {
-    display: block;
 }
