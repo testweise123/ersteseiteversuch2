@@ -36,9 +36,19 @@ body {
     border-radius: 2px;
 }
 
-/* Das Menü, wenn es angezeigt wird */
-.menu-content {
+/* Menü-Checkbox unsichtbar machen */
+.menu-toggle {
     display: none;
+}
+
+/* Menü anzeigen, wenn die Checkbox aktiv ist */
+.menu-toggle:checked + .menu-btn + .menu-content {
+    display: block;
+}
+
+/* Das Menü */
+.menu-content {
+    display: none; /* Standardmäßig unsichtbar */
     position: absolute;
     top: 40px;
     right: 0;
@@ -48,6 +58,7 @@ body {
     width: 150px;
 }
 
+/* Styling der Links und des Menüs */
 .menu-content ul {
     list-style-type: none;
     margin: 0;
@@ -64,17 +75,12 @@ body {
 }
 
 .menu-content a {
-    color: #fff; /* Weiße Schrift für die Links */
+    color: #fff;
     text-decoration: none;
 }
 
 .menu-content a:hover {
-    text-decoration: underline;  /* Unterstreichen, wenn man mit der Maus drüber fährt */
-}
-
-/* Menü anzeigen, wenn der Button geklickt wird */
-.menu-content.active {
-    display: block;
+    text-decoration: underline;
 }
 
 /* Willkommenstext */
