@@ -9,16 +9,20 @@
 <body>
     <!-- Ausklappbares Menü oben rechts -->
     <div class="menu">
-        <button class="menu-btn">
+        <!-- Checkbox als Schalter für das Menü -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Label für den Menü Button -->
+        <label for="menu-toggle" class="menu-btn">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </button>
+        </label>
+        <!-- Menü-Inhalte -->
         <div class="menu-content">
             <ul>
                 <li><a href="seite1.html">Spider-Man</a></li>
                 <li><a href="seite2.html">Black Widow</a></li>
-                 <li><a href="index.html">Startseite</a></li> <!-- Link zur Index-Seite -->
+                <li><a href="index.html">Startseite</a></li> <!-- Link zur Index-Seite -->
             </ul>
         </div>
     </div>
